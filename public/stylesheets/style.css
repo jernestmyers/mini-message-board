@@ -1,8 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+body {
+  background-color: #f1faee;
+  color: #1d3557;
+  font: 18px sans-serif, Helvetica, Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  color: #e63946;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 a {
-  color: #00B7FF;
+  color: #457b9d;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+a:hover,
+a:visited {
+  color: #1d3557;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.msg-container,
+form {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: 450px;
+  border: 1px solid #1d3557;
+  border-radius: 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0;
+}
+
+.msg-text {
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.form-field {
+  margin: 0.75rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+textarea,
+input[type="text"] {
+  width: 300px;
+}
+
+input[type="text"] {
+  height: 1.5rem;
+}
+
+input[type="submit"] {
+  height: 2rem;
+  width: 100px;
+  outline: none;
+  border: none;
+  background-color: #e63946;
+  color: #a8dadc;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #1d3557;
 }

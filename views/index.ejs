@@ -8,10 +8,10 @@
     <h1><%= title %></h1>
     <div>
       <% messages.forEach(function(msg){ %>
-      <div>
-        <p><%= msg.text %></p>
-        <p><%= msg.user %></p>
-        <p><%= msg.added %></p>
+      <div class="msg-container">
+        <p class="msg-text"><%= msg.text %></p>
+        <p class="author">By: <%= msg.user %></p>
+        <p class="date">Date: <%= msg.added %></p>
       </div>
       <% }); %>
     </div>

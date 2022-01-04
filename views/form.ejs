@@ -7,13 +7,13 @@
   <body>
     <h1><%= title %></h1>
     <form method="POST" action="/new">
-      <div>
+      <div class="form-field">
         <label for="author">Your name:</label>
         <input type="text" id="author" name="author" placeholder="Enter your name..."></input>
       </div>
-      <div>
+      <div class="form-field">
         <label for="message">Your message:</label>
-        <textarea id="message" name="messageContent" placeholder="Enter your message..."></textarea>
+        <textarea id="message" name="messageContent" placeholder="Enter your message..." rows="5"></textarea>
       </div>
       <input type="submit" value="Submit"></input>
     </form>
